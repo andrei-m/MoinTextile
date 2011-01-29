@@ -1,4 +1,5 @@
 h1. MoinTextile
+
 A simple "Textile":http://en.wikipedia.org/wiki/Textile_(markup_language) parser for "MoinMoin":http://moinmo.in 1.9.1.
 
 h2. Installation
@@ -6,16 +7,17 @@ h2. Installation
 # Copy @mointextile.py@ in to the @data/plugin/parser/@ directory[1].
 # Restart MoinMoin
 
-h2. Usage
-The plugin is enabled on a page-by-page basis using teh @#format mointextile@ directive at the top of the page.
 fn1. Check "here":http://moinmo.in/ParserMarket/InstallingParsers for the most up to date plug-in installation instructions.
 
 h2. Usage
+
 The plugin is enabled on a page-by-page basis using teh @#format mointextile@ directive at the top of the page.
 
 h2. Bugs
+
 * Intra-wiki links to pages with spaces in their names do not work. A work around is to create a link alias with a fully-qualifed URL.
 
 h2. License
+
 Copyright (C) 2011 Andrei Mackenzie. This plug-in is distributed under the terms of the "GNU GPL":http://www.gnu.org/licenses/gpl.
 
