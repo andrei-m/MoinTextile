@@ -19,5 +19,5 @@ h2. Bugs
 
 h2. License
 
-Copyright (C) 2011 Andrei Mackenzie. This plug-in is distributed under the terms of the "GNU GPL":http://www.gnu.org/licenses/gpl.
+Copyright (C) 2011 Andrei Mackenzie. This plugin is distributed under the terms of the "GNU GPL":http://www.gnu.org/licenses/gpl.
 
