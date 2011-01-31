@@ -4,8 +4,9 @@ A simple "Textile":http://en.wikipedia.org/wiki/Textile_(markup_language) parser
 
 h2. Installation
 
+# Prerequisites for this plugin are "PyTextile":http://pypi.python.org/pypi/textile and MoinMoin itself.
 # Copy @mointextile.py@ in to the @data/plugin/parser/@ directory[1].
-# Restart MoinMoin
+# Restart MoinMoin.
 
 fn1. Check "here":http://moinmo.in/ParserMarket/InstallingParsers for the most up to date plug-in installation instructions.
 
