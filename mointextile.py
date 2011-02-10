@@ -65,7 +65,7 @@ class MoinTextile(textile.Textile):
 
     def links(self, text):
         """
-        Except '%' as a valid character in URLs so as to accept URLs that
+        Accept '%' as a valid character in URLs so as to accept URLs that
         contain %20, etc.
         """
 
