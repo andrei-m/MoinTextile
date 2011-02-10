@@ -12,13 +12,12 @@ fn1. Check "here":http://moinmo.in/ParserMarket/InstallingParsers for the most u
 
 h2. Usage
 
-The plugin is enabled on a page-by-page basis using teh @#format mointextile@ directive at the top of the page.
+The plugin is enabled on a page-by-page basis using the @#format mointextile@ directive at the top of the page.
 
 h2. Bugs
-
-* Intra-wiki links to pages with spaces in their names do not work. A work around is to create a link alias with a fully-qualifed URL.
 
 h2. License
 
 Copyright (C) 2011 Andrei Mackenzie. This plugin is distributed under the terms of the "GNU GPL":http://www.gnu.org/licenses/gpl.
 
+Portions of this plugin are derived from the "PyTextile":http://code.google.com/p/pytextile library and are (C) their respective owners.
