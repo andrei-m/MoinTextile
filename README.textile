@@ -1,6 +1,6 @@
 h1. MoinTextile
 
-A simple "Textile":http://en.wikipedia.org/wiki/Textile_(markup_language) parser for "MoinMoin":http://moinmo.in 1.9.1.
+A simple "Textile":http://en.wikipedia.org/wiki/Textile_(markup_language) parser for "MoinMoin":http://moinmo.in 1.9.
 
 h2. Installation
 

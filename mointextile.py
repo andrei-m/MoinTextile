@@ -6,9 +6,7 @@
 
     The following license terms pertain to all code inside the MoinTextile
     class:
-"""
 
-__copyright__ = """
 Copyright (c) 2009, Jason Samsa, http://jsamsa.com/
 Copyright (c) 2004, Roberto A. F. De Almeida, http://dealmeida.net/
 Copyright (c) 2003, Mark Pilgrim, http://diveintomark.org/
@@ -22,9 +20,6 @@ Textile's procedural code into a class framework
 
 Additions and fixes Copyright (c) 2006 Alex Shiels http://thresholdstate.com/
 
-"""
-
-__license__ = """
 L I C E N S E
 =============
 Redistribution and use in source and binary forms, with or without
