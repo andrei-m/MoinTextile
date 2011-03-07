@@ -87,6 +87,7 @@ class Parser:
     """
     Parse the raw markup as Textile
     """
+    textiler = MoinTextile() #static to more easily test custom processing
 
     def __init__(self, raw, request, **kw):
         """ 
@@ -96,13 +97,19 @@ class Parser:
         self.request = request
         self.form = request.form
         self._ = request.getText
-        self.textiler = MoinTextile()
 
     def format(self, formatter):
         """ 
         Process the raw markup as Textile and write the result to
         the request 
         """
-        processed = self.textiler.textile(self.raw)
-        self.request.write(processed)
+        self.request.write(self.get_processed(self.raw))
 
+    @staticmethod
+    def get_processed(raw):
+        """Converts the raw Textile to Wiki-enabled HTML"""
+        return Parser.textiler.textile(raw)
+
+        """
+        TODO: figure out the best way to substitute in a (http) or (mailto) class if no classes are given on an href link. Use something like re.sub('(?P<title>', '\(http\)\g<title>' ... )
+        """
