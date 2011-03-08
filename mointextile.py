@@ -100,16 +100,16 @@ class Parser:
 
     def format(self, formatter):
         """ 
-        Process the raw markup as Textile and write the result to
-        the request 
+        Parse the raw markup as textile and write it to the request 
         """
         self.request.write(self.get_processed(self.raw))
 
     @staticmethod
     def get_processed(raw):
-        """Converts the raw Textile to Wiki-enabled HTML"""
-        return Parser.textiler.textile(raw)
+        """Convert the raw Textile to Wiki-enabled HTML"""
+        #Add Moin classes for external http or mailto links
+        match = r'"(?P<title>[^\(].*)":(?P<protocol>(http)|(mailto))'
+        subst = r'"(\g<protocol>)\g<title>":\g<protocol>'
+        
+        return Parser.textiler.textile(re.sub(match,subst,raw))
 
-        """
-        TODO: figure out the best way to substitute in a (http) or (mailto) class if no classes are given on an href link. Use something like re.sub('(?P<title>', '\(http\)\g<title>' ... )
-        """
