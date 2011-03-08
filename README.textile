@@ -16,6 +16,8 @@ The plugin is enabled on a page-by-page basis using the @#format mointextile@ di
 
 h2. Bugs
 
+When adding the @http@ class attribute to external links with no other class specified, this plugin should probably use the same regular expression as Moin in order to decide if a link is internal or external. It currently just looks for links that start with "http".
+
 h2. License
 
 Copyright (C) 2011 Andrei Mackenzie. This plugin is distributed under the terms of the "GNU GPL":http://www.gnu.org/licenses/gpl.
