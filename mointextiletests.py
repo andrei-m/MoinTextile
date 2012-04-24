@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
     Tests for the mointextile plugin.
 
